@@ -1,7 +1,7 @@
 import serial
 from time import sleep
 
-arduino=serial.Serial('COM3',9600)#NOME DO SERIAL DO ARDUINO E SUA PORTA DEFINIDA, NA MAIORIA DAS VZS O PADRÃO É COM3 MSM
+arduino=serial.Serial('COM7',9600)#NOME DO SERIAL DO ARDUINO E SUA PORTA DEFINIDA, NA MAIORIA DAS VZS O PADRÃO É COM3 MSM
 
 def ligar_led(led_num):
     arduino.write(str(led_num).encode())
